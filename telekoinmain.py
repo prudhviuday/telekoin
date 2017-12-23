@@ -5,6 +5,11 @@ import json
 import requests
 import time
 
+from os import environ
+from flask import Flask
+
+app = Flask(__name__)
+app.run(environ.get('PORT'))
 #import urllib
 
 
