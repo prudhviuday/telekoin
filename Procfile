@@ -1,1 +1,1 @@
-web: python telekoin.py
+web: python telekoinmain.py
