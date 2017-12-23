@@ -4,5 +4,4 @@ redis
 # If you need to specify a version
 requests==2.16.5
 
-json
-time
+simplejson==3.13.2
