@@ -5,11 +5,21 @@ import json
 import requests
 import time
 
-from os import environ
-from flask import Flask
+import redis
+import os
+import telebot
+# import some_api_lib
+# import ...
 
-app = Flask(__name__)
-app.run(environ.get('PORT'))
+# Example of your code beginning
+#           Config vars
+token = os.environ['317172621:AAF_L9Y4vrEK4TUCR7d2TGrjxturuHMk4JA']
+#some_api_token = os.environ['SOME_API_TOKEN']
+#             ...
+
+# If you use redis, install this add-on https://elements.heroku.com/addons/heroku-redis
+r = redis.from_url(os.environ.get("REDIS_URL"))
+
 #import urllib
 
 
